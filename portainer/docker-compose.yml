@@ -8,8 +8,7 @@ services:
     command: -H unix:///var/run/docker.sock
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - 'mnt/docker-storage/portainer_data:/data'
+      - portainer_data:/data
 
 volumes:
   portainer_data:
-    driver: local
