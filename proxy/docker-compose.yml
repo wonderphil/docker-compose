@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nginx: 
+    image: nginx:latest
+    container_name: proxy_nginx
+    volumes:
+      - 'nginx_proxy:/etc/nginx/config.d/'
+      - 'certificates:/etc/ssl-sonic/'
+    ports:
+      - 80:80
+      - 443:443
+
+volumes:
+  nginx_proxy:
+    driver: local
+  certificates:
+    driver: local
