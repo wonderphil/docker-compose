@@ -2,7 +2,7 @@ version: '2'
 services:
   nginx: 
     image: nginx:latest
-    container_name: proxy_nginx
+    container_name: proxy
     volumes:
       - 'nginx_proxy:/etc/nginx/conf.d/'
       - 'certificates:/etc/ssl-sonic/'
