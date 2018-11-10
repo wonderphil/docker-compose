@@ -7,8 +7,8 @@ services:
       - 'nginx_proxy:/etc/nginx/conf.d/'
       - 'certificates:/etc/ssl-sonic/'
     ports:
-      - 80:80
-      - 443:443
+      - '80:80'
+      - '443:443'
 
 volumes:
   nginx_proxy:
