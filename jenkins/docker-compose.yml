@@ -16,5 +16,5 @@ volumes:
     driver: local
 
 networks:
-  outside:
+  bridge:
     external: true
