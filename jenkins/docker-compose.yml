@@ -8,7 +8,7 @@ services:
       - '50000:50000'
     volumes:
       - 'jenkins_data:/var/jenkins_home'
-    networks:
+    netowrks:
       - bridge
 
 volumes:
@@ -16,5 +16,6 @@ volumes:
     driver: local
 
 networks:
-  bridge:
-    external: true
+  default:
+    external:
+      name: bridge
