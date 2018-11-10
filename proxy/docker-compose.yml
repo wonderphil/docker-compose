@@ -4,7 +4,7 @@ services:
     image: nginx:latest
     container_name: proxy_nginx
     volumes:
-      - 'nginx_proxy:/etc/nginx/config.d/'
+      - 'nginx_proxy:/etc/nginx/conf.d/'
       - 'certificates:/etc/ssl-sonic/'
     ports:
       - 80:80
